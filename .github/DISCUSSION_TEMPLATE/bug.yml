@@ -1,0 +1,44 @@
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Signaler un bug sur filigro.fr
+
+        Décris le problème rencontré. Plus tu es précis, plus vite on peut corriger !
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Que s'est-il passé ?
+      description: Décris le bug et ce que tu attendais.
+      placeholder: "Ex : Mon PDF téléchargé est plus grand que l'original après avoir ajouté un filigrane..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Comment reproduire le problème ?
+      placeholder: |
+        1. Charger un fichier sur filigro.fr
+        2. Appliquer un filigrane
+        3. Télécharger
+        4. Ouvrir dans Chrome → le document est agrandi
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Navigateur
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Mobile (préciser dans la description)
+    validations:
+      required: true
