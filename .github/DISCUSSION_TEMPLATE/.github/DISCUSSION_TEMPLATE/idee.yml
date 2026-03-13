@@ -1,0 +1,37 @@
+title: "[Idée] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Proposer une amélioration pour filigro.fr
+
+        Toutes les idées sont les bienvenues, même les plus simples !
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Quel problème veux-tu résoudre ?
+      placeholder: "Ex : Je dois filigrane 10 documents un par un, c'est long..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Ta proposition
+      placeholder: "Ex : Permettre de déposer plusieurs fichiers d'un coup..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: Importance pour toi
+      options:
+        - ⭐ Ce serait sympa
+        - ⭐⭐ Ça m'aiderait vraiment
+        - ⭐⭐⭐ Fonctionnalité essentielle pour moi
+    validations:
+      required: true
